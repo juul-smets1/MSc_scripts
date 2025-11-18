@@ -1,0 +1,351 @@
+remove ncview 2.1.7 (GCC) library and binaries.
+remove Scientific Linux 7 libraries.
+remove netcdf 4.3.3 (GCC) library and binaries.
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) slurm
+load cdo 1.9.3 (GCC) library and binaries.
+load hdf5 1.10.1 (gcc) library and binaries.
+load Scientific Linux 7 libraries.
+remove Scientific Linux 7 libraries.
+load Scientific Linux 7 libraries.
+remove Scientific Linux 7 libraries.
+load Scientific Linux 7 libraries.
+load nco 4.7.5 (gcc) library and binaries.
+load netcdf 4.6.1 (GCC) library and binaries.
+remove Scientific Linux 7 libraries.
+load Scientific Linux 7 libraries.
+remove Scientific Linux 7 libraries.
+load Scientific Linux 7 libraries.
+cdo sinfo: Processed 1 variable [0.02s 35MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1990.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1990.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1990.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1990.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2717.25s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2717.29s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2717.33s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2717.33s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2717.33s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1991.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1991.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1991.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1991.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2726.68s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2726.73s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2726.77s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2726.77s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2726.77s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1992.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1992.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1992.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1992.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94867200 values from 1 variable over 366 timesteps [2716.16s]
+cdo(4) remapbil: Processed 94867200 values from 1 variable over 366 timesteps [2716.20s]
+cdo(3) ifthen: Processed 2663539200 values from 2 variables over 367 timesteps [2716.22s]
+cdo(2) sellonlatbox: Processed 2656281600 values from 1 variable over 366 timesteps [2716.22s]
+cdo setmissval: Processed 474336 values from 1 variable over 366 timesteps [2716.22s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1993.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1993.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1993.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1993.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2710.65s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2710.69s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2710.74s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2710.74s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2710.74s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1994.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1994.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1994.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1994.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2718.65s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2718.71s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2718.74s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2718.74s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2718.74s 1639MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1995.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1995.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1995.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1995.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2739.77s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2739.84s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2739.89s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2739.90s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2739.90s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1996.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1996.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1996.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1996.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94867200 values from 1 variable over 366 timesteps [2742.73s]
+cdo(4) remapbil: Processed 94867200 values from 1 variable over 366 timesteps [2742.82s]
+cdo(3) ifthen: Processed 2663539200 values from 2 variables over 367 timesteps [2742.87s]
+cdo(2) sellonlatbox: Processed 2656281600 values from 1 variable over 366 timesteps [2742.87s]
+cdo setmissval: Processed 474336 values from 1 variable over 366 timesteps [2742.87s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1997.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1997.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1997.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1997.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2714.62s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2714.72s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2714.77s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2714.77s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2714.77s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1998.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1998.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1998.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1998.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2698.78s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2698.88s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2698.92s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2698.93s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2698.93s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1999.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1999.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1999.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_1999.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2693.53s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2693.68s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2693.75s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2693.76s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2693.76s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2000.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2000.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2000.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2000.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94867200 values from 1 variable over 366 timesteps [2698.68s]
+cdo(4) remapbil: Processed 94867200 values from 1 variable over 366 timesteps [2698.75s]
+cdo(3) ifthen: Processed 2663539200 values from 2 variables over 367 timesteps [2698.79s]
+cdo(2) sellonlatbox: Processed 2656281600 values from 1 variable over 366 timesteps [2698.79s]
+cdo setmissval: Processed 474336 values from 1 variable over 366 timesteps [2698.79s 1639MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2001.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2001.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2001.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2001.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2729.44s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2729.52s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2729.56s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2729.56s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2729.56s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2002.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2002.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2002.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2002.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2748.22s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2748.32s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2748.36s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2748.37s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2748.37s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2003.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2003.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2003.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2003.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2698.95s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2699.02s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2699.07s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2699.07s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2699.07s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2004.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2004.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2004.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2004.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94867200 values from 1 variable over 366 timesteps [2712.76s]
+cdo(4) remapbil: Processed 94867200 values from 1 variable over 366 timesteps [2712.86s]
+cdo(3) ifthen: Processed 2663539200 values from 2 variables over 367 timesteps [2712.90s]
+cdo(2) sellonlatbox: Processed 2656281600 values from 1 variable over 366 timesteps [2712.90s]
+cdo setmissval: Processed 474336 values from 1 variable over 366 timesteps [2712.90s 1640MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2005.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2005.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2005.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2005.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2737.57s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2737.64s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2737.69s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2737.70s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2737.70s 1639MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2006.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2006.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2006.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2006.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2730.00s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2730.14s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2730.23s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2730.23s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2730.23s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2007.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2007.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2007.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2007.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2730.80s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2730.86s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2730.93s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2730.94s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2730.94s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2008.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2008.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2008.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2008.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94867200 values from 1 variable over 366 timesteps [2750.57s]
+cdo(4) remapbil: Processed 94867200 values from 1 variable over 366 timesteps [2750.66s]
+cdo(3) ifthen: Processed 2663539200 values from 2 variables over 367 timesteps [2750.72s]
+cdo(2) sellonlatbox: Processed 2656281600 values from 1 variable over 366 timesteps [2750.72s]
+cdo setmissval: Processed 474336 values from 1 variable over 366 timesteps [2750.72s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2009.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2009.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2009.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2009.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2712.82s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2712.90s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2712.96s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2712.96s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2712.96s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2010.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2010.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2010.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2010.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2702.12s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2702.17s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2702.20s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2702.20s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2702.20s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2011.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2011.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2011.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2011.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2705.32s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2705.40s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2705.45s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2705.45s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2705.45s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2012.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2012.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2012.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2012.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94867200 values from 1 variable over 366 timesteps [2715.70s]
+cdo(4) remapbil: Processed 94867200 values from 1 variable over 366 timesteps [2715.78s]
+cdo(3) ifthen: Processed 2663539200 values from 2 variables over 367 timesteps [2715.83s]
+cdo(2) sellonlatbox: Processed 2656281600 values from 1 variable over 366 timesteps [2715.83s]
+cdo setmissval: Processed 474336 values from 1 variable over 366 timesteps [2715.85s 1639MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2013.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2013.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2013.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2013.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2683.03s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2683.11s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2683.15s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2683.16s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2683.16s 1637MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2014.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2014.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2014.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2014.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2676.50s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2676.56s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2676.63s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2676.64s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2676.64s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2015.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2015.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2015.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2015.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2679.41s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2679.52s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2679.56s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2679.56s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2679.56s 1639MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2016.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2016.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2016.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2016.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94867200 values from 1 variable over 366 timesteps [2659.64s]
+cdo(4) remapbil: Processed 94867200 values from 1 variable over 366 timesteps [2659.69s]
+cdo(3) ifthen: Processed 2663539200 values from 2 variables over 367 timesteps [2659.72s]
+cdo(2) sellonlatbox: Processed 2656281600 values from 1 variable over 366 timesteps [2659.72s]
+cdo setmissval: Processed 474336 values from 1 variable over 366 timesteps [2659.72s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2017.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2017.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2017.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2017.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2651.66s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2651.71s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2651.74s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2651.74s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2651.74s 1638MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2018.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2018.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2018.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2018.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2657.39s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2657.43s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2657.49s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2657.49s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2657.49s 1639MB]
+cdo setmissval: Started child process "sellonlatbox,104,107,8.5,11.5 -ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2019.nc (pipe1.1)".
+cdo(2) sellonlatbox: Started child process "ifthen /lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc -remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2019.nc (pipe2.1)".
+cdo(3) ifthen: Started child process "remapbil,/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/clone_5m_global.nc -setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2019.nc (pipe3.1)".
+cdo(4) remapbil: Started child process "setmisstonn /lustre/backup/WUR/ESG/data/MODEL_DATA/VIC/FORCING/VICWUR/WFDE5/daily/swdown_daily_WFDE5_CRU/swdown_daily_WFDE5_CRU_2019.nc (pipe4.1)".
+cdo(3) ifthen: Filling up stream1 >/lustre/nobackup/WUR/ESG/marin052/isimip3b/input/mask_5m_global.nc< by copying the first timestep.
+cdo(4) remapbil: SCRIP bilinear weights from lonlat (720x360) to lonlat (4320x1680) grid
+cdo(5) setmisstonn: Processed 94608000 values from 1 variable over 365 timesteps [2680.95s]
+cdo(4) remapbil: Processed 94608000 values from 1 variable over 365 timesteps [2681.02s]
+cdo(3) ifthen: Processed 2656281600 values from 2 variables over 366 timesteps [2681.06s]
+cdo(2) sellonlatbox: Processed 2649024000 values from 1 variable over 365 timesteps [2681.06s]
+cdo setmissval: Processed 473040 values from 1 variable over 365 timesteps [2681.06s 1638MB]
