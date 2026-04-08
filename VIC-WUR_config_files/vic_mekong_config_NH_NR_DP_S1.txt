@@ -89,7 +89,7 @@ WFC_SRC                 FROM_VEGPARAM
 RESULT_DIR          /lustre/nobackup/WUR/ESG/smets008/mGV/validations/mekong/output
 
 
-OUTFILE               mekong_1999_2019_NH_NR_DP_S0
+OUTFILE               mekong_1999_2019_NH_NR_DP_S1
 OUT_FORMAT						NETCDF4
 COMPRESS						5
 AGGFREQ							NDAYS	1
