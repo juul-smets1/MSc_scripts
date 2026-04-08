@@ -1,0 +1,163 @@
+# ============================================================
+# Script: extract_viirs_et_timeseries.py
+# Purpose: Loop through VIIRS ET_500m HDF5 files across years
+#          Match VIC boundaries, exclude invalid values (>10000),
+#          compute average ET per date, and save as CSV
+# ============================================================
+
+import h5py
+import numpy as np
+import os
+import re
+import pandas as pd
+from datetime import datetime
+
+# -------------------------------
+# 1. Define VIC study area boundaries
+# -------------------------------
+vic_boundary = {
+    "lat_min": 8.54167,
+    "lat_max": 11.4583,
+    "lon_min": 104.042,
+    "lon_max": 106.958
+}
+
+# -------------------------------
+# 2. Define satellite grid geometries (boundaries stay fixed)
+# -------------------------------
+grid_geometries = {
+    "h28v08": [
+        (99.6259, 0.0004),
+        (110.0184, -0.0102),
+        (111.7068, 9.9998),
+        (101.1513, 10.0088)
+    ],
+    "h28v07": [
+        (101.1705, 9.9726),
+        (111.7183, 9.9416),
+        (117.0729, 19.9995),
+        (106.0116, 20.0297)
+    ]
+}
+
+# -------------------------------
+# 3. Compute lat/lon arrays for a grid
+# -------------------------------
+def compute_lat_lon(boundary_points, n_rows, n_cols):
+    """Vectorized bilinear interpolation for lat/lon arrays."""
+    bl, br, tr, tl = boundary_points
+    t = np.linspace(0, 1, n_rows)[:, None]  # rows
+    s = np.linspace(0, 1, n_cols)[None, :]  # columns
+
+    left_lon = bl[0] + t * (tl[0] - bl[0])
+    left_lat = bl[1] + t * (tl[1] - bl[1])
+    right_lon = br[0] + t * (tr[0] - br[0])
+    right_lat = br[1] + t * (tr[1] - br[1])
+
+    lon_array = left_lon + s * (right_lon - left_lon)
+    lat_array = left_lat + s * (right_lat - left_lat)
+    return lat_array, lon_array
+
+# -------------------------------
+# 4. Load ET_500m dataset from HDF5
+# -------------------------------
+def load_et_data(file_path):
+    """Load ET_500m dataset from HDF5 file."""
+    dataset_path = '/HDFEOS/GRIDS/VIIRS_Grid_ETLE/Data Fields/ET_500m'
+    with h5py.File(file_path, 'r') as hdf:
+        data = hdf[dataset_path][:]
+    return data, data.shape
+
+# -------------------------------
+# 5. Filter data by VIC boundary
+# -------------------------------
+def filter_data_by_vic_boundary(data, lat_array, lon_array, vic_boundary):
+    """Extract pixels within VIC boundary."""
+    mask = (
+        (lat_array >= vic_boundary["lat_min"]) &
+        (lat_array <= vic_boundary["lat_max"]) &
+        (lon_array >= vic_boundary["lon_min"]) &
+        (lon_array <= vic_boundary["lon_max"])
+    )
+    return data[mask]
+
+# -------------------------------
+# 6. Extract Julian day and convert to date
+# -------------------------------
+def extract_date_from_filename(filename):
+    """
+    Extract AYYYYDDD and convert to YYYY-MM-DD.
+    Works correctly even when year changes (e.g., 2012361 -> 2013-01-01 next).
+    """
+    match = re.search(r"A(\d{4})(\d{3})", filename)
+    if match:
+        year = int(match.group(1))
+        doy = int(match.group(2))
+        try:
+            date = datetime(year, 1, 1) + pd.to_timedelta(doy - 1, unit='D')
+            return date.date()
+        except Exception:
+            return None
+    return None
+
+# -------------------------------
+# 7. Main processing
+# -------------------------------
+def main():
+    base_dir = r"D:\WUR\NASA_ESDS\VIIRS_NPP_MekongETData_F19"
+    output_csv = os.path.join(base_dir, "VIIRS_ET_timeseries.csv")
+
+    results = []
+
+    # Find all HDF5 files in the directory
+    all_files = [f for f in os.listdir(base_dir) if f.endswith(".h5")]
+
+    # Group files by date
+    dates = {}
+    for f in all_files:
+        date = extract_date_from_filename(f)
+        if date:
+            dates.setdefault(date, []).append(f)
+
+    print(f"Found {len(dates)} unique dates in folder.\n")
+
+    for date, files in sorted(dates.items()):
+        print(f"Processing date: {date}")
+
+        all_valid_data = []
+
+        for grid_name in ["h28v07", "h28v08"]:
+            # Find corresponding file for this grid
+            matching_files = [f for f in files if grid_name in f]
+            if not matching_files:
+                continue
+
+            file_path = os.path.join(base_dir, matching_files[0])
+            data, (n_rows, n_cols) = load_et_data(file_path)
+
+            lat_array, lon_array = compute_lat_lon(grid_geometries[grid_name], n_rows, n_cols)
+            filtered_data = filter_data_by_vic_boundary(data, lat_array, lon_array, vic_boundary)
+            valid_data = filtered_data[filtered_data <= 10000]
+
+            if valid_data.size > 0:
+                all_valid_data.append(valid_data)
+
+        if all_valid_data:
+            combined = np.concatenate(all_valid_data)
+            avg_et = np.mean(combined)
+            print(f"  Average ET: {avg_et:.2f}\n")
+            results.append({"Date": date, "Average_ET": avg_et})
+        else:
+            print("  No valid data for this date.\n")
+
+    # Save results to CSV
+    df = pd.DataFrame(results)
+    df.sort_values("Date", inplace=True)
+    df.to_csv(output_csv, index=False)
+    print(f"\n✅ Saved time series to {output_csv}")
+
+# -------------------------------
+# 8. Run the script
+# -------------------------------
+if __name__ == "__main__":
+    main()
