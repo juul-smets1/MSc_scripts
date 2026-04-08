@@ -3,4 +3,4 @@ The VIC-Julia model is developed by Karun Datadien.
 Hence the title of this study; 'Hydrological model development: a comparative assessment of the VIC-Julia and VIC-WUR model physical accuracy and computational efficiency'.
 Generative AI has been used for the majority of the scripts in this study, therefore, the author cannot help with further questions about this matter.
 For further information about the methodology and/or study itself, contact: juulsmets14@gmail.com
-![alt text](image-url)
+![alt text](Layout_GitHub.PNG)
